@@ -15,7 +15,7 @@ export default [
     techUsed: [<FaReact />, <FaJs />, <FaHtml5 />, <FaSass />, <FaGitAlt />],
     description:
       "My own portfolio website (this website) displaying some of the project on which I've been working and some of the techniques I've picked up over the past while.",
-    githubLink: true,
+    githubLink: "https://github.com/mikebarr24/serpath",
     liveSite: "www.serpath.com",
     challenges:
       "The main challenge here was to create a clear design that displays my skills, portfolio and C.V. in a way that is accessable to anyone visiting the site. ",
