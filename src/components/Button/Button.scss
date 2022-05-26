@@ -1,0 +1,21 @@
+@import "../../config";
+
+
+.portfolio-buttons {
+  margin-left: auto;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: $dark-color;
+  background-color: white;
+  border: 3px solid $main-color;
+  border-radius: 20px;
+  margin: 0 5px;
+}
+
+.live-site-button.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}

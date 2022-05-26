@@ -1,0 +1,7 @@
+@import "../config";
+
+#skills {
+  scroll-margin-top: $nav-height;
+  height: calc(100vh - $nav-height);
+  background-color: $secondary-color;
+}

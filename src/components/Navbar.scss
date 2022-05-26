@@ -1,0 +1,80 @@
+@import "../config";
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  background-color: $dark-color;
+  height: $nav-height;
+  display: flex;
+  padding: 0 10px;
+  .navbar--title {
+    color: $main-color;
+    margin: auto 0;
+    font-size: 2.5rem;
+  }
+  .menu-items-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: $dark-color;
+    background-image: url('../images/menu-background.jpg');
+    background-blend-mode: multiply;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(-100%);
+    opacity: 0;
+    display: flex;
+    @include transition-ease(500ms);
+    &.open {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .menu-items {
+      color: white;
+      margin: auto;
+      li {
+        list-style: none;
+        font-size: 3rem;
+        margin: 2rem;
+        font-weight: 500;
+        text-align: center;
+      }
+      opacity: 0;
+      transform: scaleX(2);
+      @include transition-ease(700ms);
+      &.open {
+        transform: scaleX(1);
+        opacity: 1;
+        scale: 1;
+      }
+    }
+  }
+  .burger-button {
+    z-index: 1;
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    span {
+      display: inline-block;
+      width: 30px;
+      height: 3px;
+      background-color: $main-color;
+      margin: 3px 0;
+      border-radius: 3px;
+      &:last-of-type {
+        width: 23px;
+      }
+    }
+  }
+}
+

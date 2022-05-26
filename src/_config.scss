@@ -1,0 +1,46 @@
+$main-color: #f4a460;
+$secondary-color: #62b2f7;
+$dark-color: #25425c;
+$text-color: #25425c;
+$nav-height: 50px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: $dark-color;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+section {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.secondary-color {
+  color: $secondary-color;
+}
+
+.section-title {
+  margin: 0 auto;
+  font-size: 3rem;
+}
+
+@mixin transition-ease($timing) {
+  transition: all $timing ease-in-out;
+}

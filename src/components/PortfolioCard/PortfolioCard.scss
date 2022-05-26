@@ -1,0 +1,29 @@
+@import "../../_config.scss";
+
+.portfolio-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-right: 40px;
+  border-radius: 10px;
+  width: 110%;
+  margin: 10px 0;
+  .portfolio-title {
+    font-size: 2rem;
+  }
+  .tech-used {
+    font-size: 3rem;
+    * {
+      margin: 10px 5px;
+    }
+  }
+  .portfolio-description {
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+}

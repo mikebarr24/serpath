@@ -1,0 +1,7 @@
+@import "../config";
+
+#portfolio {
+  scroll-margin-top: $nav-height;
+  min-height: calc(100vh - $nav-height);
+  background-color: $secondary-color;
+}
