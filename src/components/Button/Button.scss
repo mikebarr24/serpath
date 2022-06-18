@@ -1,6 +1,5 @@
 @import "../../config";
 
-
 .portfolio-buttons {
   margin-left: auto;
 }
@@ -13,9 +12,5 @@ button {
   border: 3px solid $main-color;
   border-radius: 20px;
   margin: 0 5px;
-}
-
-.live-site-button.disabled {
-  opacity: 0.3;
-  cursor: not-allowed;
+  cursor: pointer;
 }

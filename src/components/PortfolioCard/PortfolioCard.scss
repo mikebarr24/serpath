@@ -13,9 +13,13 @@
     font-size: 2rem;
   }
   .tech-used {
-    font-size: 3rem;
-    * {
-      margin: 10px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    .tech-icon {
+      font-size: 3rem;
+      * {
+        margin: 10px 5px;
+      }
     }
   }
   .portfolio-description {

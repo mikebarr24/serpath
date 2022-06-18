@@ -1,9 +1,9 @@
 import "./Portfolio.scss";
 import Card from "./PortfolioCard/PortfolioCard.js";
-import portfolioData from "../portfolioData";
+import { portfolioProjects } from "../portfolioData";
 
 export default function Portfolio() {
-  const cardElements = portfolioData.map((item) => {
+  const cardElements = portfolioProjects().map((item) => {
     return (
       <Card
         key={item.id}
@@ -13,6 +13,7 @@ export default function Portfolio() {
         description={item.description}
         challenges={item.challenges}
         github={item.githubLink}
+        liveSite={item.liveSite}
       />
     );
   });

@@ -2,14 +2,20 @@
 
 #about {
   scroll-margin-top: $nav-height;
-  height: calc(100vh - $nav-height);
+  min-height: calc(100vh - $nav-height);
   background-color: $main-color;
-  .about-me {
-    margin: 0.5rem 0;
+  * {
+    margin: 10px 0;
   }
   .about-photo {
     border-radius: 50%;
     width: 80%;
+    margin: 0 auto;
+  }
+  .download-cv {
+    border-color: $secondary-color;
+  }
+  a {
     margin: 0 auto;
   }
 }
