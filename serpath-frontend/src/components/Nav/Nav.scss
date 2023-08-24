@@ -1,0 +1,14 @@
+@import "../../config";
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .nav-title {
+    font-size: 3rem;
+  }
+  .nav--burger-bar {
+    margin-right: 1rem;
+    z-index: 1000;
+  }
+}

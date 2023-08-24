@@ -1,0 +1,25 @@
+@import "../../config";
+
+.dropdown-container {
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: gray;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  opacity: 0;
+  .dropdown-menu-list {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7rem;
+  }
+  &.open {
+    visibility: visible;
+    opacity: 1;
+  }
+}

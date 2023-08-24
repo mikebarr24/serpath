@@ -1,0 +1,92 @@
+/* VARIABLES */
+$color-main: #000000;
+$color-secondary: white;
+
+$txt-color-main: white;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  box-sizing: inherit;
+  margin: 0;
+  text-underline-offset: 0.3rem;
+}
+
+/* COLOURS */
+.color-main {
+  color: $color-main;
+}
+
+.color-secondary {
+  color: $color-secondary;
+}
+
+/* FONT */
+
+.page-title-text {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.font-medium {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.font-large {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.txt-color-main {
+  color: $txt-color-main;
+}
+
+/* LISTS */
+.lst-no-bullets {
+  list-style: none;
+}
+
+/* BACKGROUNDS */
+.bg-color-main {
+  background-color: $color-main;
+}
+
+.bg-color-secondary {
+  background-color: $color-secondary;
+}
+
+/* MARGIN */
+
+.margin-1 {
+  margin: 1rem;
+}
+
+.margin-tb-1 {
+  margin: 1rem 0;
+}
+
+.margin-tb-2 {
+  margin: 2rem 0;
+}
+
+/* PADDING */
+
+.padding-1 {
+  padding: 1rem;
+}
