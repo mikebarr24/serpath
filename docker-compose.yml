@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  serpath_frontend:
+    build: ./serpath-frontend
+    ports:
+      - "3000:3000" # Map container port 3000 to host port 3000
+    volumes:
+      - ./serpath-frontend:/app # Mount the current directory to /app inside the container
+      - /app/node_modules # Prevent Docker from overwriting node_modules
+    environment:
+      - NODE_ENV=development # Set Node.js environment to development
