@@ -1,6 +1,7 @@
 import Burger from "../Burger/Burger";
 import MobileDropdown from "./ModileDropdown";
 import "./Nav.scss";
+import constants from "../../constants";
 
 import { useState } from "react";
 
@@ -12,7 +13,9 @@ function Nav() {
   };
   return (
     <nav className="nav-container bg-color-main">
-      <h2 className="txt-color-main padding-1 nav-title">SerPath</h2>
+      <h2 className="txt-color-main padding-1 nav-title">
+        {constants.general.appName}
+      </h2>
       <Burger
         open={open}
         onClick={handleClick}
